@@ -79,6 +79,13 @@ export default function LoginPage() {
                     </label>
                     <GoogleLoginButton onCredential={handleGoogleLogin} disabled={loading || !acceptGoogleTerms} />
                 </div>}
+                <div className="preview-entry">
+                    <div>
+                        <strong>Quer conhecer antes?</strong>
+                        <p>Explore as funcionalidades do VFitness com dados fictícios, sem precisar fazer login.</p>
+                    </div>
+                    <Link to="/preview" className="button button-secondary">Ver demonstração</Link>
+                </div>
                 <p className="auth-switch">Ainda não tem conta? <Link to="/register">Criar conta</Link></p>
             </section>
         </main>
